@@ -14,4 +14,15 @@ int main() {
     do {
         cin >> userGuess;
         
-        if (userGue
+        if (userGuess > numberToGuess) {
+            cout << "Too high! Try again: ";
+        } else if (userGuess < numberToGuess) {
+            cout << "Too low! Try again: ";
+        } else {
+            cout << "Congratulations! You guessed the correct number." << endl;
+        }
+    } while (userGuess != numberToGuess);
+
+    return 0;
+}
+
